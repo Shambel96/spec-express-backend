@@ -32,7 +32,7 @@ export const updateUser = (req, res, next) => {
   user.email = req.body.email || user.email;
   user.password = req.body.password || user.password;
 
-  res.json(user);
+  res.json({ message: "User updated successfully" });
 };
 
 export const findAllUsers = (req, res)=>{
